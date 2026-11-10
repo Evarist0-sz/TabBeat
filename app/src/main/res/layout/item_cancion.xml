@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/superficie"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="0dp"
+    app:rippleColor="@color/esmeralda_profundo"
+    app:strokeColor="@color/borde_musgo"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Cajita con el tono -->
+        <TextView
+            android:id="@+id/txtTono"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_tono"
+            android:gravity="center"
+            android:textColor="@color/verde_celeste"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="G" />
+
+        <!-- Título, artista y acordes -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_principal"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Título" />
+
+            <TextView
+                android:id="@+id/txtArtista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/texto_niebla"
+                android:textSize="14sp"
+                android:text="Artista" />
+
+            <TextView
+                android:id="@+id/txtAcordes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/verde_celeste"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:text="G · B · C" />
+        </LinearLayout>
+
+        <!-- Corazón de favorito -->
+        <ImageView
+            android:id="@+id/btnFavorito"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_heart_outline"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Favorito" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

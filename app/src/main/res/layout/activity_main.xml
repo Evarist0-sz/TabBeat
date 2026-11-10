@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_bosque"
+    tools:context=".MainActivity">
+
+    <!-- ===== CAPA DE SILUETAS ===== -->
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="230dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="-20dp"
+        android:layout_marginBottom="80dp"
+        android:alpha="0.35"
+        android:src="@drawable/silhouette_guitar"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="120dp"
+        android:alpha="0.25"
+        android:src="@drawable/silhouette_note"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="90dp"
+        android:alpha="0.20"
+        android:rotation="25"
+        android:src="@drawable/silhouette_note"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="44dp"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="160dp"
+        android:alpha="0.22"
+        android:rotation="-15"
+        android:src="@drawable/silhouette_pick"
+        android:contentDescription="@null" />
+
+    <!-- ===== CONTENIDO ===== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Encabezado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="24dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/txtTituloPantalla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/texto_principal"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Encuentra tus canciones favoritas"
+                android:textColor="@color/texto_niebla"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="56dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/esmeralda_claro" />
+        </LinearLayout>
+
+        <!-- Lista de canciones -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCanciones"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="16dp"
+            tools:listitem="@layout/item_cancion" />
+
+        <!-- ===== BARRA INFERIOR ===== -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/superficie"
+            app:itemIconTint="@color/bottom_nav_color"
+            app:itemTextColor="@color/bottom_nav_color"
+            app:menu="@menu/bottom_nav_menu" />
+    </LinearLayout>
+</FrameLayout>

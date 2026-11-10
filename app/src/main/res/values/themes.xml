@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema base -->
+    <style name="Base.Theme.TabBeat" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Color principal -->
+        <item name="colorPrimary">@color/esmeralda_claro</item>
+        <item name="colorOnPrimary">@color/fondo_bosque</item>
+        <item name="colorPrimaryContainer">@color/esmeralda_profundo</item>
+        <item name="colorOnPrimaryContainer">@color/texto_principal</item>
+
+        <!-- Acento -->
+        <item name="colorSecondary">@color/verde_celeste</item>
+        <item name="colorOnSecondary">@color/fondo_bosque</item>
+
+        <!-- Fondos y superficies -->
+        <item name="android:colorBackground">@color/fondo_bosque</item>
+        <item name="colorOnBackground">@color/texto_principal</item>
+        <item name="colorSurface">@color/superficie</item>
+        <item name="colorOnSurface">@color/texto_principal</item>
+    </style>
+
+    <style name="Theme.TabBeat" parent="Base.Theme.TabBeat" />
+    <style name="Theme.Cancionero" parent="Base.Theme.TabBeat" />
+</resources>

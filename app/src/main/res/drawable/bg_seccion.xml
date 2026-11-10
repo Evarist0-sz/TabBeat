@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Chip para [Intro], [Estribillo], etc. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/esmeralda_profundo" />
+    <corners android:radius="20dp" />
+</shape>

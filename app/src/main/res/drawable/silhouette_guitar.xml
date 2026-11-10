@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="200dp"
+    android:viewportWidth="120"
+    android:viewportHeight="200">
+
+    <!-- Cuerpo -->
+    <path
+        android:fillColor="#1A3328"
+        android:pathData="M60,110
+            C35,110 20,130 20,155
+            C20,175 35,190 60,190
+            C85,190 100,175 100,155
+            C100,130 85,110 60,110 Z" />
+
+    <!-- Mástil -->
+    <path
+        android:fillColor="#1A3328"
+        android:pathData="M52,20 L68,20 L68,115 L52,115 Z" />
+
+    <!-- Cabeza -->
+    <path
+        android:fillColor="#1A3328"
+        android:pathData="M48,5 L72,5 L72,25 L48,25 Z" />
+
+    <!-- Agujero -->
+    <path
+        android:fillColor="#0B1A14"
+        android:pathData="M60,150
+            m-12,0
+            a12,12 0 1,0 24,0
+            a12,12 0 1,0 -24,0" />
+</vector>

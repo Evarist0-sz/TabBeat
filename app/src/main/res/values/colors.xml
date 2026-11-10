@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores base -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Fondos -->
+    <color name="fondo_bosque">#0B1A14</color>        <!-- Fondo general -->
+    <color name="superficie">#12261D</color>          <!-- Tarjetas -->
+    <color name="superficie_elevada">#1A3328</color>  <!-- Recuadro de rasgueo -->
+    <color name="borde_musgo">#24473A</color>         <!-- Bordes -->
+
+    <!-- Verdes esmeralda -->
+    <color name="esmeralda_profundo">#0F6B4F</color>
+    <color name="esmeralda_claro">#2BBF8A</color>
+
+    <!-- Acentos de lluvia -->
+    <color name="verde_celeste">#7FE3D0</color>       <!-- Acordes -->
+    <color name="gota_lluvia">#4FA3A5</color>         <!-- Bajeos -->
+    <color name="linea_cuerda">#3E6B5A</color>       <!-- Guiones de la tablatura (sutiles) -->
+
+    <!-- Textos -->
+    <color name="texto_principal">#E6F2EC</color>     <!-- Letra de la canción -->
+    <color name="texto_niebla">#A8C5B8</color>        <!-- Artista, datos secundarios -->
+
+    <!-- Bottom Navigation -->
+    <color name="bottom_nav_activo">#2BBF8A</color>
+    <color name="bottom_nav_inactivo">#A8C5B8</color>
+</resources>
